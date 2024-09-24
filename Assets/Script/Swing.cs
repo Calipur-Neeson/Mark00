@@ -28,10 +28,10 @@ public class Swing : MonoBehaviour
     {
         if (turnRight == true)
         {
-            if (turnDegree < 2.0f)
+            if (turnDegree < 60.0f)
             {
-                turnDegree += Time.deltaTime;
-                this.transform.localEulerAngles = new Vector3(0, 0, turnDegree);
+                turnDegree += Time.deltaTime * 60;
+                this.transform.localEulerAngles = new Vector3(turnDegree, 0, 0);
             }
             else
             {
@@ -44,10 +44,10 @@ public class Swing : MonoBehaviour
     {
         if (turnLeft == true)
         {
-            if (turnDegree > -2.0f)
+            if (turnDegree > -60.0f)
             {
-                turnDegree -= Time.deltaTime;
-                this.transform.localEulerAngles = new Vector3(0, 0, turnDegree);
+                turnDegree -= Time.deltaTime * 60;
+                this.transform.localEulerAngles = new Vector3(turnDegree, 0, 0);
             }
             else
             {

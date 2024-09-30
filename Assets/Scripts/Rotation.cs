@@ -20,7 +20,7 @@ namespace AA0000
         // Update is called once per frame
         void Update()
         {
-            transform.RotateAround(rotationPoint,axis,rotationSpeed);
+            transform.Rotate(axis,rotationSpeed);
         }
     } 
 }

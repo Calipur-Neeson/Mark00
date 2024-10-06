@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveRepeatedly : MonoBehaviour
+public class Move : MonoBehaviour
 {
     [SerializeField]
     private Transform MovePoint_1, Movepoint_2;
@@ -12,14 +12,19 @@ public class MoveRepeatedly : MonoBehaviour
     private Transform targetPos;
     private bool firstMovePoint;
 
+    [SerializeField]
+    private float rotationSpeed = 200f;
+    private Vector3 tempRotation = Vector3.zero;
+    private float zAngle;
 
     private void Awake()
     {
-        if (Random.Range(0, 2) > 1)
+        if (Random.Range(0, 2) > 0)
         {
             firstMovePoint = false;
             targetPos = Movepoint_2;
 
+            rotationSpeed *= -1f;
 
         }
         else
@@ -32,6 +37,7 @@ public class MoveRepeatedly : MonoBehaviour
     private void Update()
     {
         HandleMovement();
+        HandleRotation();
     }
     void HandleMovement()
     {
@@ -50,4 +56,13 @@ public class MoveRepeatedly : MonoBehaviour
             }
         }
     }
+
+    void HandleRotation()
+    {
+        zAngle = rotationSpeed * Time.deltaTime;
+        tempRotation.z = zAngle;
+        transform.Rotate(tempRotation);
+    }
+
+
 }

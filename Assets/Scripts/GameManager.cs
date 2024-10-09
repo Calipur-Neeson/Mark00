@@ -50,4 +50,16 @@ public class GameManager : MonoBehaviour
         //leftAnimator.SetTrigger("Damage");
         microbar?.UpdateBar(GameManager.instance.playerCurrentHealth, false, UpdateAnim.Damage);
     }
+    public void HugeDamagePlayer()
+    {
+
+        float damageAmount = Random.Range(40f, 60f);
+        GameManager.instance.playerCurrentHealth -= damageAmount;
+        if (GameManager.instance.playerCurrentHealth < 0f)
+        {
+            GameOver();
+            GameManager.instance.playerCurrentHealth = 0f;
+        }
+        microbar?.UpdateBar(GameManager.instance.playerCurrentHealth, false, UpdateAnim.Damage);
+    }
 }

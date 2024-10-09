@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleFloor
       objectReference: {fileID: 0}
+    - target: {fileID: 1809450308328134, guid: 7a87b73c9eb3b0f42bd28e2e20aba3be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4279778465235496, guid: 7a87b73c9eb3b0f42bd28e2e20aba3be, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -26,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4279778465235496, guid: 7a87b73c9eb3b0f42bd28e2e20aba3be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.21
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4330284469158708, guid: 7a87b73c9eb3b0f42bd28e2e20aba3be, type: 3}
       propertyPath: m_LocalPosition.x

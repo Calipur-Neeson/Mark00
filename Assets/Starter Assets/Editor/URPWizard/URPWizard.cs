@@ -47,6 +47,8 @@ public class URPWizard : EditorWindow
 
         if (existingPipelines.Length == 0)
         {
+            Debug.LogError($"Universal Render Pipeline Asset was not found.\n" +
+                           $"Please create one and assign under the Project Settings > Graphics > Scriptable Render Pipeline Settings.");
             return;
         }
         

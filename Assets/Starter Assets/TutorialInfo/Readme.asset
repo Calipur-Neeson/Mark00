@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Readme
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 44a17a5b205fcd349a24700e6f5615bd, type: 3}
-  title: First Person Template
+  title: Starter Assets
   sections:
-  - heading: About this template
-    text: This template provides both a first person and a third person controller.
+  - heading: About this package
+    text: This package provides both a first person and a third person controller.
       It is powered by the Universal Render Pipeline (URP).
     linkText: 
     url: 

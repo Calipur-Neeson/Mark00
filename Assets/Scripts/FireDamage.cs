@@ -7,11 +7,26 @@ public class FireDamage : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        
+            if (other.gameObject.CompareTag("Player"))
+            {
+                StartCoroutine(RepeatCollisionCheck());
+                  
+            }
+        
+        
+    }
+    private IEnumerator RepeatCollisionCheck()
+    {
+        while (true)
         {
-            GameManager.instance.HugeDamagePlayer();
+            GameManager.instance.FireDamagePlayer();
+            
+              
+            yield return new WaitForSeconds(0.5f);
         }
     }
 
-    
+   
+
 }

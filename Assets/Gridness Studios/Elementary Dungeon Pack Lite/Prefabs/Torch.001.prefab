@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7206927362178746234}
   - component: {fileID: 4220554822487122790}
-  - component: {fileID: 2206866229761440269}
+  - component: {fileID: 574767932720565824}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -203,7 +203,7 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2206866229761440269
+--- !u!114 &574767932720565824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

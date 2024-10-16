@@ -62,5 +62,17 @@ public class GameManager : MonoBehaviour
         }
         microbar?.UpdateBar(GameManager.instance.playerCurrentHealth, false, UpdateAnim.Damage);
     }
-    
+
+    public void LaserDamagePlayer()
+    {
+
+        float damageAmount = 100f;
+        GameManager.instance.playerCurrentHealth -= damageAmount;
+        if (GameManager.instance.playerCurrentHealth < 0f)
+        {
+            GameOver();
+            GameManager.instance.playerCurrentHealth = 0f;
+        }
+        microbar?.UpdateBar(GameManager.instance.playerCurrentHealth, false, UpdateAnim.Damage);
+    }
 }

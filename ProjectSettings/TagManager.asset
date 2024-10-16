@@ -5,39 +5,41 @@ TagManager:
   serializedVersion: 2
   tags:
   - FlythroughCam
+  - CinemachineTarget
+  - Laser
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Laser
   - Water
   - UI
-  - 
-  - 
-  - Skybox
   - Player
-  - PostProcessing
-  - SetDressing
-  - 
-  - 
-  - Vehicles
-  - Navmesh
-  - Environment
-  - Characters
-  - Vegetation
-  - Effects
-  - Ragdoll
-  - WaterGeometry
-  - Terrain
-  - Enemy
   - Cameras
-  - Props
-  - Avoid
-  - CameraCollider
-  - Collider
-  - Checkpoint
-  - DoNotDraw
-  - Level
+  - Push
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0

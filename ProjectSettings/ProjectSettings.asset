@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: c2ee5ec76319d894cad79983c0422fe4
+  productGUID: 541c20d34e72b6144a6d6cc6623485d5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -748,12 +748,12 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 0
   windowsGamepadBackendHint: 0
   cloudProjectId: 24b92473-de2c-4f7f-aef9-4373469ce797
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project1
+  projectName: Platformer3DClient
   organizationId: calipur_0
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1

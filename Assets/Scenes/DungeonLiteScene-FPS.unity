@@ -5764,6 +5764,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1896716070}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1347150847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6599267375808059019, guid: 23bdf2a250c29434083d94227bd0a0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4281488316261929969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1350635433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9338,6 +9344,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 684184497}
     m_Modifications:
+    - target: {fileID: 459079887033092948, guid: 23bdf2a250c29434083d94227bd0a0a1,
+        type: 3}
+      propertyPath: boxprefab
+      value: 
+      objectReference: {fileID: 1347150847}
     - target: {fileID: 6599267375808059019, guid: 23bdf2a250c29434083d94227bd0a0a1,
         type: 3}
       propertyPath: m_Name

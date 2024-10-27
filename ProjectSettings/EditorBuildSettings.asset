@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonLiteScene-FPS.unity
     guid: 5039c5e96a91a07498cb1a3fff40f497
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: a96690e7d91fc504f8f6283e0e7192b6
   m_configObjects: {}

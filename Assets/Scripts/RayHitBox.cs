@@ -6,19 +6,20 @@ using UnityEngine.Animations;
 
 public class RayHitBox : MonoBehaviour
 {
-
+    [SerializeField] private GameObject thistrigger;
     [SerializeField] private GameObject cube;
     [SerializeField] private GameObject boxprefab;
     [SerializeField] private ParticleSystem vfx;
-    private Vector3 position;
+    private Vector3 positionborn;
 
     private void Start()
     {
+    
         Transform parent = transform.parent;
-        position = parent.position;
-        
+        positionborn = parent.position;
+            
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Laser"))
@@ -32,18 +33,21 @@ public class RayHitBox : MonoBehaviour
     {
         cube.SetActive(false);
         vfx.gameObject.SetActive(true);
-        Vector3 respawnposition = new Vector3(position.x, position.y +3, position.z);
+        Vector3 respawnposition = new Vector3(positionborn.x, positionborn.y +3, positionborn.z);
+        
         //respawn(cube, respawnposition);
-        StartCoroutine(respawn(cube, respawnposition));
+        StartCoroutine(respawn(cube,thistrigger, respawnposition));
     }
 
 
 
-    private IEnumerator respawn(GameObject ob, Vector3 pos)
+    private IEnumerator respawn(GameObject ob, GameObject tr, Vector3 pos)
     {
         yield return new WaitForSeconds(1f);
-        ob.transform.position = pos;
         ob.SetActive(true);
+        ob.transform.position = pos;
+        tr.transform.position = pos;
+        
 
         //Instantiate(ob, pos, Quaternion.identity);
         

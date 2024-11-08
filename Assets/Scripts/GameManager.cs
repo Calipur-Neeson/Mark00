@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Microlight.MicroBar;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     // Start is called before the first frame update
     public static GameManager instance;
     public MicroBar microbar;

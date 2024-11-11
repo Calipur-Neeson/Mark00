@@ -1322,12 +1322,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 161259748}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &162179901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3242127466198448676, guid: 23bdf2a250c29434083d94227bd0a0a1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4281488316261929969}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &167811040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12584,51 +12578,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 684184497}
     m_Modifications:
-    - target: {fileID: 459079887033092948, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: thistrigger
-      value: 
-      objectReference: {fileID: 162179901}
-    - target: {fileID: 5112018252285056491, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5112018252285056491, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5737646253974121048, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.2350719
-      objectReference: {fileID: 0}
-    - target: {fileID: 5737646253974121048, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.3099058
-      objectReference: {fileID: 0}
-    - target: {fileID: 5737646253974121048, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1.2257538
-      objectReference: {fileID: 0}
-    - target: {fileID: 5737646253974121048, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.003098607
-      objectReference: {fileID: 0}
-    - target: {fileID: 5737646253974121048, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.64239025
-      objectReference: {fileID: 0}
-    - target: {fileID: 5737646253974121048, guid: 23bdf2a250c29434083d94227bd0a0a1,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.002494812
-      objectReference: {fileID: 0}
     - target: {fileID: 6599267375808059019, guid: 23bdf2a250c29434083d94227bd0a0a1,
         type: 3}
       propertyPath: m_Name

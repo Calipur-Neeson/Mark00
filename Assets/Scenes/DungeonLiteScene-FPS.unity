@@ -634,6 +634,7 @@ GameObject:
   - component: {fileID: 99135625}
   - component: {fileID: 99135628}
   - component: {fileID: 99135629}
+  - component: {fileID: 99135630}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -793,6 +794,20 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &99135630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99135624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5ab480437de2248be8326d886f68c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 5
+  interactKey: 323
 --- !u!1001 &108206785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8588,6 +8603,8 @@ GameObject:
   - component: {fileID: 1592753801}
   - component: {fileID: 1592753800}
   - component: {fileID: 1592753799}
+  - component: {fileID: 1592753803}
+  - component: {fileID: 1592753804}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -8682,6 +8699,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
+--- !u!114 &1592753803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592753798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0e807d8fd0c14f83265065942fd92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showObjectName: 1
+  showObjectDetails: 1
+  playDetailsAudio: 1
+  objectName: A puzzle?
+  objectDetails: What's this puzzle for? Maybe a password? But for what?
+  detailsAudioClip: {fileID: 8300000, guid: d314ca48627874449bf33368fccfcb46, type: 3}
+--- !u!65 &1592753804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592753798}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.999999, y: 1.3589382, z: 9.999999}
+  m_Center: {x: -0, y: 0.5855322, z: 0}
 --- !u!4 &1600865377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8492440690643632977, guid: 9f2ed2ef64d0a59419c4791d6ddda859,
@@ -12232,6 +12288,36 @@ PrefabInstance:
         type: 3}
       propertyPath: moveTime
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358105471298944491, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.5008602
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358105471298944491, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.1137073
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358105471298944491, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 2.8385217
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358105471298944491, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.2504301
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358105471298944491, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.05685383
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358105471298944491, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.5405616
       objectReference: {fileID: 0}
     - target: {fileID: 7406640362769239557, guid: 43c2a7eaf2a5d9840bcbbe9ba16fe8c0,
         type: 3}

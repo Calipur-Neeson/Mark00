@@ -84,6 +84,8 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: ffd55342ae694b546917511aad8c922c
     name: Music
+  - guid: 30a25ae2c8eade843bee0406f5ee9d1b
+    name: MyExposedParam
   - guid: 7c346017666cbad4b8c009b7437dfec7
     name: SFX
   m_AudioMixerGroupViews:
@@ -91,6 +93,7 @@ AudioMixerController:
     - 813caf28a5e2f6b41b055e263e708198
     - 80d64faded922b446b5b92088e6e6280
     - 38a0efb4d5f4e74468c9502862b0547c
+    - 834a5c2bef39856498874579fbf8fa19
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -106,6 +109,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: -8234904512396128724}
   - {fileID: -2764782082190236137}
+  - {fileID: 3618523724976774992}
   m_Volume: 312404810df8b9e40bbea434aed7f12a
   m_Pitch: 8e2916809cb66f742a2c51c8343d3c04
   m_Send: 00000000000000000000000000000000
@@ -157,3 +161,36 @@ AudioMixerSnapshotController:
     cefa751f4a3b4164489f25ca32730866: -22.9
     84f1c19ff4c7a0e488d78db2aec05315: -0
   m_TransitionOverrides: {}
+--- !u!243 &3618523724976774992
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ScareSounds
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 834a5c2bef39856498874579fbf8fa19
+  m_Children: []
+  m_Volume: 30a25ae2c8eade843bee0406f5ee9d1b
+  m_Pitch: c157ba07f5c8f4a4696514df1a4d86de
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 5396057127713106443}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &5396057127713106443
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: a14233fd4a19eaf4288be28ceff7eeb9
+  m_EffectName: Attenuation
+  m_MixLevel: f7f923714bc7f6c4a94df3b8f440ca55
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

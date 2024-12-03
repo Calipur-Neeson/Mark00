@@ -18624,7 +18624,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9054317863696407325}
-  - component: {fileID: 6464070491567367834}
   - component: {fileID: 7013286045522435902}
   m_Layer: 0
   m_Name: =SawBlade=
@@ -18651,21 +18650,6 @@ Transform:
   - {fileID: 7166567367788695659}
   m_Father: {fileID: 3919169988798852257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6464070491567367834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4228623483075805709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e722681e8ade984194466ea8c777558, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MovePoint_1: {fileID: 5059078536222117349}
-  Movepoint_2: {fileID: 2562067829533034284}
-  MoveSpeed: 4
 --- !u!114 &7013286045522435902
 MonoBehaviour:
   m_ObjectHideFlags: 0

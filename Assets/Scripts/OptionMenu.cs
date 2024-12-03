@@ -10,10 +10,18 @@ public class OptionMenu : MonoBehaviour
     [SerializeField] private Slider musicslider;
     [SerializeField] private Slider SFXlider;
 
-    public void SetMusicVolume()
+    private void Start()
     {
-        float musicvolume = musicslider.value;
+        musicslider.value = PlayerPrefs.GetFloat("Music", 1f);
+        SFXlider.value = PlayerPrefs.GetFloat("SFX", 1f);
+        audioMixer.SetFloat("Music", Mathf.Log10(musicslider.value) * 20);
+        audioMixer.SetFloat("SFX", Mathf.Log10(SFXlider.value) * 20);
+    }
+    public void SetMusicVolume(float musicvolume)
+    {
         audioMixer.SetFloat("Music", Mathf.Log10(musicvolume) * 20);
+        PlayerPrefs.SetFloat("Music", musicvolume);
+
     }
 
     public void SetSFXVolume()

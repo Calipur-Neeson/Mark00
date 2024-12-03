@@ -8,10 +8,12 @@ public class MainMenu : MonoBehaviour
    public void PlayGame()
     {
         SceneManager.LoadScene(1);
+        Cursor.visible = false;
     }
 
     public void QuitGame()
     {
+        Debug.Log("QUIT");
         Application.Quit();
     }
 

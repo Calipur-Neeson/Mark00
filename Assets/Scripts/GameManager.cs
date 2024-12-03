@@ -30,9 +30,17 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         print("Game Over");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
+    public void GameComplate()
+    {
+        SceneManager.LoadScene(3);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     public void DamagePlayer()
     {
 

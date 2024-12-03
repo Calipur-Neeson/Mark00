@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonLiteScene-FPS.unity
     guid: 5039c5e96a91a07498cb1a3fff40f497
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 8a1f8d004a22b364b8f8fa913ded1677
+  - enabled: 1
+    path: Assets/Scenes/GameComplate.unity
+    guid: 5a99627f797d74046bdd9a6d0b2a180c
   m_configObjects: {}

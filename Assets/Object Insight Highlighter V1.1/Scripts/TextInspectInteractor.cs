@@ -48,6 +48,7 @@ namespace TextInspectSystem
                 if (Input.GetKeyDown(interactKey))
                 {
                     textItem.ShowDetails();
+                    textItem.ShowKeyPad();
                 }
             }
         }

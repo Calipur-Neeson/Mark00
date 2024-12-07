@@ -9,6 +9,10 @@ namespace TextInspectSystem
         [SerializeField] private bool showObjectDetails;
         [SerializeField] private bool playDetailsAudio;
 
+        [Header("Contol KeyPad")]
+        [SerializeField] private bool showKeyPad;
+        [SerializeField] private GameObject keypad;
+
         [Header("Text Parameters")]
         [SerializeField] private string objectName = "Generic Object";
 
@@ -48,6 +52,17 @@ namespace TextInspectSystem
                     audioSource.clip = detailsAudioClip;
                     audioSource.Play();
                 }
+            }
+        }
+
+        public void ShowKeyPad()
+        {
+            if(showKeyPad)
+            {
+                keypad.SetActive(true);
+                Time.timeScale = 0.0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
     }

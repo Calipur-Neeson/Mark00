@@ -286,6 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb380307634b8848b1e33e8f820ac07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  music: {fileID: 1913104520}
 --- !u!1001 &135582181
 PrefabInstance:
   m_ObjectHideFlags: 0

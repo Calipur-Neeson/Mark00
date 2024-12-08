@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pausemenu;
     public Pause pause;
+    private DontDestroy Des;
     public void Continue()
     {
         pause.ispause = false;
@@ -18,11 +19,13 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         Cursor.visible = false;
+        Time.timeScale = 1.0f;
     }
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
         Cursor.visible = true;
+        Time.timeScale = 1.0f;
     }
 
     public void QuitGame()
